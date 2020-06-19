@@ -1,0 +1,29 @@
+#importing pandas 
+import pandas as pd
+
+#reading the dataset 
+file=pd.read_csv("data.csv")
+
+#dimensions of the dataset 
+file.shape
+
+#describe funciton 
+file.describe()
+
+#identifying missing values in the dataframe 
+file.isnull()
+
+file.isnull().sum()
+
+#dropping all rows where there are any missing values 
+file.dropna()
+
+file.dropna().isnull().sum()
+
+#dropping all the rows where alll the entries are missing 
+file.dropna(how='all')
+
+file.dropna(axis=1, how='all').shape
+
+#filling all the missing values in a dataframe with 0 
+file.fillna(0)
