@@ -1,0 +1,22 @@
+## Reading the data (Make it markdown)
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline 
+
+df=pd.read_csv("train.csv")
+df.shape
+df.columns
+df.head()
+
+## Variable Identification (Make it markdown)
+df.dtypes
+
+## Univariate Analysis for Continuous Variables (Make it markdown)
+#using describe function on the continuous variable
+df.describe()
+
+#plotting a histogram of age variable
+df['age'].plot.hist()
+
+#plotting a boxplot for age variable
+df['age'].plot.box()
