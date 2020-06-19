@@ -2,7 +2,7 @@
 import pandas as pd
 
 #reading the dataset 
-file=pd.read_csv("data.csv")
+file=pd.read_csv("data.csv") #this is just an example, you should mention the path and name of file with extension
 
 #dimensions of the dataset 
 file.shape
